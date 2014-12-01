@@ -19,8 +19,8 @@ var y;
 var coords = "X coords: " + x + ", Y coords: " + y
 document.getElementById("demo").innerHTML = coords;  
 
-//fireworkToLocation(x, y);
-ballAtLocation(x, y);  
+fireworkToLocation(x, y);
+//ballAtLocation(x, y);  
 
 }
 
@@ -34,12 +34,14 @@ circa.style.fill = getRandomColor();
 }
 
 function fireworkToLocation(posx, posy){
-
-//firework.cx = posx;
-//firework.cy = posy;
-    //.velocity({ height: 200, width: 50 })
-    //.velocity({ x: posx, y: posy });
-
+   
+firework.style.fill = getRandomColor();
+$("#firework").velocity({ cx: posx, cy: posy})
+            .velocity({ r: 500 })
+            .velocity({opacity: 0 })
+            .velocity({ r: 10 })
+            .velocity({ cx: 550, cy: 550})
+            .velocity({opacity: 1 })     
 }
 
 function getRandomColor() {
