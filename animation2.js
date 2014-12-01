@@ -17,30 +17,34 @@ var y;
         y = e.clientY + document.body.scrollTop + document.documentElement.scrollTop; } 
 
 var coords = "X coords: " + x + ", Y coords: " + y
-document.getElementById("demo").innerHTML = coords;  
+document.getElementById("coord").innerHTML = coords;  
 
+    
+    
+setTimeout(function() {
+  $("firework").velocity("stop")
+            .velocity({ cx: 650, cy: 650})
+            .velocity({ r: 10 })
+            .velocity({opacity: 1 });
+}, 0);
+    
 fireworkToLocation(x, y);
 //ballAtLocation(x, y);  
 
 }
 
 function ballAtLocation(posx, posy){
-
-//setInterval(turnBall(),100);
-$("#circa").velocity({ cx: posx, cy: posy});
-    
 circa.style.fill = getRandomColor();
-    
+$("#circa").velocity({ cx: posx, cy: posy});     
 }
 
 function fireworkToLocation(posx, posy){
-   
 firework.style.fill = getRandomColor();
 $("#firework").velocity({ cx: posx, cy: posy})
             .velocity({ r: 500 })
             .velocity({opacity: 0 })
             .velocity({ r: 10 })
-            .velocity({ cx: 550, cy: 550})
+            .velocity({ cx: 650, cy: 650})
             .velocity({opacity: 1 })     
 }
 

@@ -1,4 +1,4 @@
-body, h2, svg, h1 {
+body, h2, svg, h3, text {
     margin-top: 0px; margin-bottom: 0px; 
     margin-left: 0px; margin-right: 0px;
     /*padding: 0;*/
@@ -8,4 +8,9 @@ body, h2, svg, h1 {
     letter-spacing: 1px;}  
 a { text-decoration : none; color : #000; }
 svg {display: inline;}
-
+ul.mainList {
+    list-style-type: square;
+}
+li {
+ margin:0 0 20px 0;   
+}
