@@ -61,8 +61,8 @@
             aGradient.addColorStop(0,color1);
             aGradient.addColorStop(1, color2);
             
-            aCanvas.width = 2000;
-            aCanvas.height = 2000;
+            aCanvas.width = 3000;
+            aCanvas.height = 1000;
             
             
             context.fillStyle = aGradient;
