@@ -1,15 +1,26 @@
 /* jquery.js */
 /* jquery.velocity.js */
 var index = 1;
+var seen = false;
+
+
 
 function clickMe(){
+    
 document.addEventListener("click", getClickPosition, false)}
 
-//index++; //increment index
-if(index==7){index=1;} //ensures index will always between 1 and 4, dont want it to go too high now
+if(index==10){index=1;} //ensures index will always between 1 and 4, dont want it to go too high now
 
 function getClickPosition(e){
 
+    
+if(seen == false){
+$("#gautier").velocity({y:500});
+$("#instruc").velocity({opacity: 0 });
+seen = true;
+}  
+   
+    
 var x;
 var y;
     
@@ -23,7 +34,7 @@ var y;
 var coords = "X coords: " + x + ", Y coords: " + y
 document.getElementById("coord").innerHTML = coords;  
 
-var ind = index%6;  
+var ind = index%9;  
 ind.toString();   
     
 fireworkToLocation(x, y, ind); 
@@ -43,9 +54,7 @@ $(fireid).velocity({ cx: posx, cy: posy})
             .velocity({opacity: 0 })
             .velocity({ r: 10 })
             .velocity({ cx: 650, cy: 650})
-            .velocity({opacity: 1 })     
-
-
+            .velocity({opacity: 1 });     
 
 index++;
 }
