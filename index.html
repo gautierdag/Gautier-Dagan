@@ -2,19 +2,27 @@
 <html>
 <head>
   <meta charset="utf-8">
+<script src="indexfunctions.js"></script>
+<script src="support/jquery-latest.min.js" type="text/javascript"></script>
+<script src="support/jquery.velocity.min.js" type="text/javascript"></script>
+<script src="support/velocity.ui.js"></script>
 <link rel="stylesheet" type="text/css" href="styling.css">
   <title>Cool Effects</title>
 </head>
 <body>
+<center>
+<br>
 <h1>Gautier Dagan</h1>
-<ul class="mainList">
-<li>
-<a href="animation1.html"><h3>Canvas Gradient Animation</h3></a>
-</li>
-<li>
-<a href="animation2.html"><h3>SVG Fireworks</h3></a>
-</li>
-</ul>    
+<br>
+<!--<a href="animation1.html">-->
+<h3 id="1" onclick=nextPage(1)  >Canvas Gradient Animation</h3>
+
+<br>
+<h3 id="2" onclick=nextPage(2)>SVG Fireworks</h3>
+<br>
+<h3 id="3" onclick=nextPage(3)>Working with Homemade GIFs</h3>
+<br>
+</center> 
     
 </body>
 </html>
