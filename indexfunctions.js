@@ -21,7 +21,7 @@ setTimeout(
         window.open('animation2.html',"_self");
         break;
     case 3:
-       window.open('index.html',"_self");
+       window.open('animation3.html',"_self");
         break;
 }//send to right page (switch?)
   }, 2000);

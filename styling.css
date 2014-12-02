@@ -22,3 +22,14 @@ li {
     left:0px;
     top:0px;
 }*/
+
+Button {
+	background-color:transparent;
+	display:inline-block;
+	cursor:pointer;
+	font-family:"Helvetica Neue";
+	font-size:20px;
+    font-weight: 200;
+	padding:13px 31px;
+}
+
