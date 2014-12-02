@@ -61,12 +61,12 @@
             aGradient.addColorStop(0,color1);
             aGradient.addColorStop(1, color2);
             
-            aCanvas.width = 3000;
+            aCanvas.width = 1600;
             aCanvas.height = 1000;
             
             
             context.fillStyle = aGradient;
-            context.fillRect(0,0,1200,1000)
+            context.fillRect(0,0,1600,1000)
             
             
             document.body.style.background = "url(" + aCanvas.toDataURL() + ")";
