@@ -1,8 +1,12 @@
 /* jquery.js */
 /* jquery.velocity.js */
+var index = 1;
 
 function clickMe(){
 document.addEventListener("click", getClickPosition, false)}
+
+//index++; //increment index
+if(index==7){index=1;} //ensures index will always between 1 and 4, dont want it to go too high now
 
 function getClickPosition(e){
 
@@ -19,33 +23,31 @@ var y;
 var coords = "X coords: " + x + ", Y coords: " + y
 document.getElementById("coord").innerHTML = coords;  
 
+var ind = index%6;  
+ind.toString();   
     
-    
-setTimeout(function() {
-  $("firework").velocity("stop")
-            .velocity({ cx: 650, cy: 650})
-            .velocity({ r: 10 })
-            .velocity({opacity: 1 });
-}, 0);
-    
-fireworkToLocation(x, y);
-//ballAtLocation(x, y);  
-
+fireworkToLocation(x, y, ind); 
 }
 
-function ballAtLocation(posx, posy){
-circa.style.fill = getRandomColor();
-$("#circa").velocity({ cx: posx, cy: posy});     
-}
 
-function fireworkToLocation(posx, posy){
+function fireworkToLocation(posx, posy, ind){
+
+var firework = document.getElementById('firework' + ind);       
 firework.style.fill = getRandomColor();
-$("#firework").velocity({ cx: posx, cy: posy})
+
+var fireid = '#firework' + ind;    
+console.log(fireid);   
+    
+$(fireid).velocity({ cx: posx, cy: posy})
             .velocity({ r: 500 })
             .velocity({opacity: 0 })
             .velocity({ r: 10 })
             .velocity({ cx: 650, cy: 650})
             .velocity({opacity: 1 })     
+
+
+
+index++;
 }
 
 function getRandomColor() {
