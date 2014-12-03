@@ -7,7 +7,9 @@ body, h1, h2, svg, h3, text {
     font-weight: 200;
     letter-spacing: 1px;}  
 a { text-decoration : none; color : #000; }
+
 svg {display: inline;}
+
 ul.mainList {
     list-style-type: square;
     text-align: center;
@@ -33,3 +35,7 @@ Button {
 	padding:13px 31px;
 }
 
+
+#aCanvas {
+    
+}
