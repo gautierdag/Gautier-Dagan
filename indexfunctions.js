@@ -1,4 +1,4 @@
-var numItems = 4;
+var numItems = 5;
 
 function nextPage(numItem){
 
@@ -25,6 +25,9 @@ setTimeout(
         break;
     case 4:
        window.open('animation4.html',"_self");
+        break;
+    case 5:
+       window.open('animation5.html',"_self");
         break;
 }//send to right page (switch?)
   }, 2000);
