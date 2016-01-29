@@ -15,19 +15,19 @@ setTimeout(
   {
    switch (numItem) {
     case 1:
-        window.open('animation1.html',"_self");
+        window.open('html/animation1.html',"_self");
         break;
     case 2:
-        window.open('animation2.html',"_self");
+        window.open('html/animation2.html',"_self");
         break;
     case 3:
-       window.open('animation3.html',"_self");
+       window.open('html/animation3.html',"_self");
         break;
     case 4:
-       window.open('animation4.html',"_self");
+       window.open('html/animation4.html',"_self");
         break;
     case 5:
-       window.open('animation5.html',"_self");
+       window.open('html/about.html',"_self");
         break;
 }//send to right page (switch?)
   }, 2000);
