@@ -16,7 +16,7 @@ resume: true
 resume-external: true
 resume-url: https://www.dropbox.com/s/ehfkuo0mlw16sb5/RESUME%20Gautier%20Dagan%20-ENGLISH.docx?dl=0
 
-url: http://www.gautier.tech #https://gautierdag.github.io
+url: https://www.gautier.tech #https://gautierdag.github.io
 # your url: http://USERNAME.github.io
 
 permalink: /:title/
