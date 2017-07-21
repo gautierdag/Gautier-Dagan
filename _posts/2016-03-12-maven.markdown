@@ -1,0 +1,28 @@
+---
+title: "MAVEN: Hybrid App and Web Platform"
+layout: post
+date: 2016-3-12 10:00
+tag:
+  - Ionic
+  - AngularJS
+  - Android
+  - iOS
+image: /assets/images/maven.jpg
+headerImage: true
+projects: true
+hidden: true # don't count this post in blog pagination
+description: "Ionic Hybrid App"
+category: project
+author: gautierdagan
+externalLink: false
+---
+
+I worked on the development of the Ionic hybrid app: MAVEN. MAVEN is an internal vendor rating system for the marketing departments of the university.
+It is available for download on the PlayStore [here](https://play.google.com/store/apps/details?id=edu.northwestern.globalmarketing&hl=en) and as an enterprise iOS app.
+
+---
+Stack:
+
+- NodeJS
+- AngularJS
+- Ionic/Cordova
