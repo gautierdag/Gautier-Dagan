@@ -1,0 +1,30 @@
+---
+title: "Independent Research: The Sustainability of Bitcoins"
+layout: post
+date: 2015-9-11 10:00
+tag:
+  - Bitcoin
+  - Research
+  - Scraping
+  - Python
+image: /assets/images/bitcoin.png
+headerImage: true
+projects: true
+hidden: true # don't count this post in blog pagination
+description: "A Bitcoin Market Analysis"
+category: project
+author: gautierdagan
+externalLink: false
+---
+
+I received an Undergraduate Summer Research Grant to carry out independent research
+on the Sustainability of Bitcoins. I used python and beautiful soup to scrape data
+from the Blockchain. I also analyzed the mining capabilities of technologies used
+and their real profitability in the future. I conclude that Bitcoins are not sustainable
+in the long term when the supply of minted coin decreases below a certain point. Check out the
+full report [here](https://www.dropbox.com/s/uuygh3d1lvr4gng/The%20Sustainability%20of%20Bitcoin%20Transactions.pdf?dl=0).
+
+---
+Stack:
+
+- Python

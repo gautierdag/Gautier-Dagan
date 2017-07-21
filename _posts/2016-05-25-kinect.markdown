@@ -1,0 +1,29 @@
+---
+title: "Xbox Kinect: Bow Exhibit"
+layout: post
+date: 2016-5-25 10:00
+tag:
+  - Unity 2D
+image: /assets/images/bow.jpg
+headerImage: true
+projects: true
+hidden: true # don't count this post in blog pagination
+description: "Chinese Hall Interactive Implementation of a Traditional Bow"
+category: project
+author: gautierdagan
+externalLink: false
+---
+
+For EECS 395: Tangible Interactions, we had for goal to interpret and render interactive museum pieces exhibited at the Chicago Fields Museum's Cyrus Tang Hall of China. Our group decided to implement an interactive Bow exhibit as we felt that it would be a natural piece to interact with. Our goal was to have visitors learn through an engaging and immersive experience by interacting with the bow.
+
+To do this we design a simple 2d Kinect game that detects the motion of a User holding the bow and pulling back arrows. By implementing simple game physics and giving players the ability to shoot a target while holding an "artifact" (we used a modern bow to prototype) proved to make for an enriching experience. It allowed users to experience and feel closer to the history of the object by reenacting its use
+
+- Early designs included: tension sensors, real dimensions of the test bow, more complicated game formats.
+- As we moved forward: learning Kinect programming through technology exploration, making the experience more accessible and user-friendly, understanding the time-consuming nature of game design and development
+- Final design: minimalistic (place focus on learning objectives), relatively simple but enriching user experience through visual feedback and interaction
+ 
+---
+Stack:
+
+- Unity
+- Xbox Kinect
