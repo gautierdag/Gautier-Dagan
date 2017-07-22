@@ -7,7 +7,7 @@ layout: page
 <p>Hi, my name is Gautier Dagan. I am a 1st year Artificial Intelligence Master student at the University of Amsterdam. I just graduated from Northwestern University in June 2017 pursuing three majors in Computer Science, Economics, and International Studies. I am very interested in everything techy: Robotics, Artificial Intelligence, Data Scraping and Analysis, Web Design,
 but also in Game theory, History, International Relations, and Microeconomics.</p>
 
-<p>Last March I cofounded <a href="http://zcruit.co" target="_blank">Zcruit</a>, an emerging startup looking to bring predictive analytics to college football recruiting. We are an alumni of the Wildfire pre-accelerator program through <a href="http://thegarage.northwestern.edu/">the Garage</a> at Northwestern University. We now have 3 paying football programs on board with several others in the works, and a team of 6 working full time over the 2017 summer.
+<p>Last March, I cofounded <a href="http://zcruit.co" target="_blank">Zcruit</a>, an emerging startup looking to bring predictive analytics to college football recruiting. We are an alumni of the Wildfire pre-accelerator program through <a href="http://thegarage.northwestern.edu/">the Garage</a> at Northwestern University. We now have 3 paying football programs on board with several others in the works, and a team of 6 working full time over the 2017 summer.
 
 Read more about us in USA Today: <a href="https://www.usatoday.com/story/sports/ncaaf/2017/01/23/analytical-approach-inexact-science-recruiting/96963326/" target="_blank">here</a>.
 </p>
