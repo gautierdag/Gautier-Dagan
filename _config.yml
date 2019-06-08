@@ -14,7 +14,7 @@ picture: assets/images/profile.jpg
 # and specify source (external or local).
 resume: true
 resume-external: true
-resume-url: "https://www.dropbox.com/s/snehkallkr78ipe/Resume%20-%20Gautier%20Dagan.pdf?dl=0"
+resume-url: "https://github.com/gautierdag/curriculum-vitae/raw/master/main.pdf"
 
 url: https://www.gautier.tech #https://gautierdag.github.io
 # your url: http://USERNAME.github.io
@@ -39,7 +39,7 @@ twitter: __gautier__
 # google: mygoogle
 # instagram: myinstagram
 # pinterest: mypinterest
-linkedin: gautier-dagan-7b323162
+linkedin: gautier-dagan
 # youtube: myyoutube
 # spotify: myspotify
 github: gautierdag
