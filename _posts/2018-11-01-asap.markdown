@@ -1,0 +1,24 @@
+---
+title: "Predicting Essay Scores in the Kaggle ASAP Dataset using Deep Learning"
+layout: post
+date: 2018-11-01 10:00
+tag:
+  - NLP
+  - Pytorch
+  - Text Classification
+image: /assets/images/asap.png
+headerImage: true
+projects: true
+hidden: true # don't count this post in blog pagination
+description: "Positional Attention in Language Modelling"
+category: project
+author: gautierdagan
+externalLink: false
+---
+
+Class project for the course in Deep Learning for Natural Language Technology:
+
+We focused on the issue of Automated Essay Scoring on the Automated Student Assessment Price (ASAP) dataset. We approached this task by building around variants of LSTM models. To represent the long sequences of text in essays, we considered different ways to generate meaningful embeddings. First, we considered a commonly used approach, consisting of fine-tuning Score-Specific Word Embeddings (SSWE). We then switch to ELMo (Embeddings from Language Models), a recently proposed contextual character-based word representation. Furthermore, we examine two different pre-processing approaches to efficiently capture and represent the information from misspelled words.
+
+
+You can view the full PDF report [here](/assets/pdfs/DL4NLTReport.pdf) and the Github repo can be found [here](https://github.com/LindaPetrini/DL4NLT )

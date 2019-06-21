@@ -1,0 +1,25 @@
+---
+title: "EECV 2018: Adding Object Detection Skills to Visual Dialogue Agents"
+layout: post
+date: 2018-11-01 10:00
+tag:
+  - NLP
+  - Computer Vision
+  - VQA
+image: /assets/images/sheep.png
+headerImage: true
+projects: true
+hidden: true # don't count this post in blog pagination
+description: "Positional Attention in Language Modelling"
+category: project
+author: gautierdagan
+externalLink: false
+---
+
+Publication in the Workshop on Shortcomings in Vision and Language (SiVL) ECCV 2018.
+
+Our goal is to equip a dialogue agent that asks questions about a visual scene with object detection skills. We take the first steps in this direction within the GuessWhat?! game. We use Mask R-CNN object features as a replacement for ground-truth annotations in the Guesser module, achieving an accuracy of 57.92%. This proves that our system is a viable alternative to the original Guesser, which achieves an accuracy of 62.77% using ground-truth annotations, and thus should be considered an upper bound for our automated system. Crucially, we show that our system exploits the Mask R-CNN object features, in contrast to the original Guesser augmented with global, VGG features. Furthermore, by automating the object detection in GuessWhat?!, we open up a spectrum of opportunities, such as playing the game with new, non-annotated images and using the more granular visual features to condition the other modules of the game architecture. 
+
+![Detecting Sheeps](/assets/images/sheep.png)
+
+You can view the full PDF report [here](https://staff.fnwi.uva.nl/r.fernandezrovira/papers/2018/BaniEtal-sivl2018.pdf).
