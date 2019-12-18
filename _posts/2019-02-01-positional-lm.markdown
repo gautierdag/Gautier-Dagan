@@ -20,7 +20,7 @@ This was an independent research project through the Institute for Logic, Langua
 
 In this paper, we proposed using the Positional Attention mechanism in an Attentive Language Model architecture. We evaluate it compared to an LSTM baseline and standard attention and find that it surpasses standard attention on both validation and test perplexity on both the Penn Treebank and Wikitext-02 datasets while still using fewer parameters. Using the attention distribution vectors we are able to analyze the differences between the two mechanisms and offer insight into the potential benefits of positional attention.
 
-
+ 
 Standard Attention:
 ![Standard Attention](/assets/images/attention.png)
 
@@ -28,3 +28,6 @@ Positional Attention:
 ![Positional Attention](/assets/images/attentionpos.png)
 
 You can view the full PDF report [here](/assets/pdfs/PAIReport.pdf) and the Github repo can be found [here](https://github.com/gautierdag/pytorch-attentive-lm)
+
+Update (september/2019): 
+This work was included as part of an official research paper and published to [arvix](https://arxiv.org/abs/1911.03872).
