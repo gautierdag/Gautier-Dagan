@@ -13,8 +13,9 @@ picture: assets/images/profile.jpg
 # If you want to include your resume, set to true
 # and specify source (external or local).
 resume: true
-resume-external: true
-resume-url: "https://github.com/gautierdag/curriculum-vitae/raw/master/main.pdf"
+resume-external: false
+# resume-url: "https://github.com/gautierdag/curriculum-vitae/raw/master/main.pdf"
+resume-url: assets/pdfs/Gautier_Dagan_CV.pdf
 
 url: https://www.gautier.tech #https://gautierdag.github.io
 # your url: http://USERNAME.github.io
