@@ -7,7 +7,7 @@ layout: page
 
 <p>Hi, my name is Gautier Dagan, I am a first year PhD student in NLP at the University of Edinburgh 🏴󠁧󠁢󠁳󠁣󠁴󠁿 through the <a href="https://web.inf.ed.ac.uk/cdt/natural-language-processing" target="_blank" rel="noopener">UKRI CDT programme</a>.
 
-For my PhD, I am very exploring the intersection of such as Multimodal Learning (vision + text), Interactive Learning and Representation learning. 
+For my PhD, I am exploring the intersection of such as Multimodal Learning (vision + text), Interactive Learning and Representation learning. 
 
 I am also interested in Data Scraping and Analysis, Game theory and International Relations.
 
@@ -26,17 +26,19 @@ Previously, I graduated Cum Laude from the University of Amsterdam with a MSc. i
 While working there, I obtained Solutions Architect and Machine Learning AWS certifications and got hands on experience at managing live production environments using best practices. Working in the industry also gave me the confidence to build and ship ML features and products for a wide variety of applications (from finance to healthcare).
 </p>
 <p>
-In my free time, I also participate in Kaggle competitions and I am currently ranked in the <a href="https://www.kaggle.com/brotye" arget="_blank" rel="noopener"> top 1000 </a> globally.
+In my free time, I also participate in Kaggle competitions and I am currently ranked in the <a href="https://www.kaggle.com/brotye" arget="_blank" rel="noopener">top 1000</a> globally.
 </p>
 
 <h2> Entrepreneurship </h2>
 <p>In March 2016, I co-founded <a href="http://zcruit.com" target="_blank" rel="noopener">Zcruit</a>, an emerging startup looking to bring predictive analytics to college football recruiting. We are a proud alumni of the Wildfire pre-accelerator program through <a href="http://thegarage.northwestern.edu/">the Garage</a> at Northwestern University. I left the team to pursue my Master's degree after we were aquired by Reigning Champs in November 2017. Since then, both the team and the product have continued to grow and flourish.
 
 Read more about Zcruit in the USA Today article that put us on the map: <a href="https://www.usatoday.com/story/sports/ncaaf/2017/01/23/analytical-approach-inexact-science-recruiting/96963326/" target="_blank" rel="noopener">here</a>.
+</p>
+<p>
 
-
-Since then I have worked in multiple startups and even tried my hand (again) at founding one several times. I joined the <a href="https://www.joinef.com" target="_blank" rel="noopener">Entrepreneur First</a>  LD 15 cohort between September 2020 and January 2021. 
-
+Since then, I have worked in multiple startups and even tried my hand (again) at founding one several times. I joined the <a href="https://www.joinef.com" target="_blank" rel="noopener">Entrepreneur First</a>  LD 15 cohort between September 2020 and January 2021. 
+</p>
+<p>
 I love entrepreneurship and startups and find a lot of joy in the similarities between the exploration of ideas in startups and academic research.
 
 </p>
