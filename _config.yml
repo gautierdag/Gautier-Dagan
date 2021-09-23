@@ -1,6 +1,6 @@
 # main text of home
 name: Gautier Dagan
-bio: Artificial Intelligence MSc. <br> University of Amsterdam
+bio: PhD student in NLP <br> University of Edinburgh
 
 # twitter summary info
 # description: A blog about technology and stuff related
@@ -55,7 +55,7 @@ email: gautier.dagan.at.gmail.com
 authors:
     gautierdagan:
         name: Gautier Dagan
-        bio: Artificial Intelligence MSc. - University of Amsterdam
+        bio: PhD Student in NLP - University of Edinburgh
         external-image: false
         picture: assets/images/profile.jpg
         twitter: __gautier__
@@ -94,7 +94,7 @@ show-author: false
 # do you want some animations?
 animation: true
 
-gems:
+plugins:
   - jekyll-seo-tag
   - jekyll-gist
   - jekyll-feed
