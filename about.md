@@ -3,7 +3,11 @@ title: About
 layout: page
 ---
 
-![Profile Image]({{ site.url }}/{{ site.picture }})
+<!-- ![Profile Image]({{ site.url }}/{{ site.picture }}) -->
+
+
+![Profile Image](/assets/images/ski.jpg)
+
 
 <p>Hi, my name is Gautier Dagan, I am a first year PhD student in NLP at the University of Edinburgh 🏴󠁧󠁢󠁳󠁣󠁴󠁿 through the <a href="https://web.inf.ed.ac.uk/cdt/natural-language-processing" target="_blank" rel="noopener">UKRI CDT programme</a>.
 </p>
