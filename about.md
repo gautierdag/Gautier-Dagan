@@ -9,15 +9,15 @@ layout: page
 ![Profile Image](/assets/images/ski.jpg)
 
 
-<p>Hi, my name is Gautier Dagan, I am a first year PhD student in NLP at the University of Edinburgh 🏴󠁧󠁢󠁳󠁣󠁴󠁿 through the <a href="https://web.inf.ed.ac.uk/cdt/natural-language-processing" target="_blank" rel="noopener">UKRI CDT programme</a>.
+<p>Hi, my name is Gautier Dagan, I am a second year PhD student in NLP at the University of Edinburgh 🏴󠁧󠁢󠁳󠁣󠁴󠁿 through the <a href="https://web.inf.ed.ac.uk/cdt/natural-language-processing" target="_blank" rel="noopener">UKRI CDT programme</a>.
 </p>
 <p>
-I am exploring the intersection of such as <strong>Multimodal Learning</strong>, <strong>Interactive Learning</strong> and <strong>Representation learning</strong>. 
+I am exploring the intersection of such as <strong>Multimodal Learning</strong>, <strong>Interactive Learning</strong> and <strong>Representation learning</strong>. My research focuses on learning actions descriptions into compositional representations that can be used downstram to generate coherent plans.
 </p>
 
 <h2>Education</h2>
 <p>
-I recently started my PhD at the University of Edinburgh (September 2021) under the supervision of Alex Lascarides and Frank Keller.
+I started my PhD at the University of Edinburgh (September 2021) under the supervision of Alex Lascarides and Frank Keller.
 </p>
 <p>
 Previously, I graduated Cum Laude from the University of Amsterdam with a MSc. in Artificial Intelligence in 2019, where I focused on Language Emergence in Cultural Evolution. At the <a href="https://www.illc.uva.nl/" target="_blank" rel="noopener"> Institute for Language, Logic and Computation</a>, I was part of the <a href="http://i-machine-think.github.io/" target="_blank" rel="noopener">i-machine-think</a> research group working under the supervision of Dr. Elia Bruni. 
@@ -30,7 +30,7 @@ Previously, I graduated Cum Laude from the University of Amsterdam with a MSc. i
 While working there, I obtained Solutions Architect and Machine Learning AWS certifications and got hands on experience at managing live production environments using best practices. Working in the industry also gave me the confidence to build and ship ML features and products for a wide variety of applications, from finance to healthcare.
 </p>
 <p>
-In my free time, I also participate in Kaggle competitions and I am currently ranked in the <a href="https://www.kaggle.com/brotye" arget="_blank" rel="noopener">top 1000</a> globally.
+In my free time, I also participate in Kaggle competitions and I am currently ranked in the <a href="https://www.kaggle.com/brotye" arget="_blank" rel="noopener">top 1%</a> globally.
 </p>
 
 <h2> Entrepreneurship </h2>
