@@ -17,12 +17,12 @@ author: gautierdagan
 externalLink: false
 ---
 
-After a two year stint in the industry as a Machine Learning Engineer at a few different startups ([Mansa](https://getmansa.com) and [Research Grid](https://rgrid.tech)), and a try at launching my own startup through [Entrepreneur First](https://www.joinef.com), I have decided to dive back into NLP research. 
+After a two year stint in the industry as a Machine Learning Engineer at a few different startups ([Mansa](https://getmansa.com) and [Research Grid](https://rgrid.tech)), and a try at launching my own startup through [Entrepreneur First](https://www.joinef.com), I have decided to dive back into NLP research.
 
 I have just joined the [Centre for Doctoral Training (CDT) in Natural Language Processing (NLP) programme](https://web.inf.ed.ac.uk/cdt/natural-language-processing/programme/about-the-programme) at the University of Edinburgh under the supervision of Alex Lascarides and Frank Keller.
 
-The UKRI CDT in NLP is jointly run by the School of Informatics and the School of Philosophy, Psychology and Language Sciences and is funded by UK Research & Innovation (UKRI). 
+The UKRI CDT in NLP is jointly run by the School of Informatics and the School of Philosophy, Psychology and Language Sciences and is funded by UK Research & Innovation (UKRI).
 
-My research will focus around multi-modalities, interactive learning, and representation learning. I am particularly interested in how to learn ways to generalise better and transfer existing world knowledge to low data settings where interaction is possible. 
+My research will focus around multi-modalities, interactive learning, and representation learning. I am particularly interested in how to learn ways to generalise better and transfer existing world knowledge to low data settings where interaction is possible.
 
 Stay tuned for upcoming projects :smile:
