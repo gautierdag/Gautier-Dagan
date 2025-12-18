@@ -13,7 +13,24 @@
     <meta property="og:url" content="https://gautier.tech">
     
     <title>Gautier Dagan</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- Preconnect to external APIs for faster fetching -->
+    <link rel="preconnect" href="https://api.semanticscholar.org">
+    <link rel="preconnect" href="https://api.github.com">
+    <link rel="dns-prefetch" href="https://api.semanticscholar.org">
+    <link rel="dns-prefetch" href="https://api.github.com">
+    
+    <!-- Preload LCP image -->
+    <link rel="preload" as="image" type="image/webp" imagesrcset="assets/images/ski-280.webp 1x, assets/images/ski-560.webp 2x">
+    
+    <!-- Critical CSS inlined for faster first paint -->
+    <style>
+        :root{--color-bg:#fff;--color-text:#1a1a1a;--color-muted:#666;--color-link:#06c;--color-link-hover:#049;--color-border:#e0e0e0;--color-tag-bg:#f0f0f0;--max-width:680px;--spacing:2rem}@media(prefers-color-scheme:dark){:root{--color-bg:#1a1a1a;--color-text:#e8e8e8;--color-muted:#999;--color-link:#6db3f2;--color-link-hover:#9ecbf7;--color-border:#333;--color-tag-bg:#2a2a2a}}*{box-sizing:border-box;margin:0;padding:0}html{font-size:16px}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;color:var(--color-text);background-color:var(--color-bg);padding:2rem 1rem}.container{max-width:var(--max-width);margin:0 auto}header{text-align:center;margin-bottom:var(--spacing);padding-bottom:var(--spacing);border-bottom:1px solid var(--color-border)}.profile-photo{width:140px;height:140px;border-radius:50%;object-fit:cover;margin-bottom:1rem}h1{font-size:2rem;font-weight:600;margin-bottom:.25rem}.tagline{color:var(--color-muted);font-size:1.1rem;margin-bottom:1rem}.social-links{display:flex;justify-content:center;align-items:center;gap:1rem;flex-wrap:wrap}.social-links a{color:var(--color-text);text-decoration:none;display:inline-flex;align-items:center;gap:.25rem;padding:.25rem;transition:opacity .2s}.social-links a:hover{opacity:.7}.social-links svg{width:22px;height:22px}
+    </style>
+    
+    <!-- Load full stylesheet asynchronously (non-render-blocking) -->
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/images/favicon/favicon-32x32.png">
@@ -23,7 +40,18 @@
     <div class="container">
         <!-- Header -->
         <header>
-            <img src="assets/images/ski.jpg" alt="Gautier Dagan" class="profile-photo">
+            <picture>
+                <source type="image/webp" srcset="assets/images/ski-280.webp 1x, assets/images/ski-560.webp 2x">
+                <source type="image/jpeg" srcset="assets/images/ski-280.jpg 1x, assets/images/ski-560.jpg 2x">
+                <img src="assets/images/ski-280.jpg" 
+                     srcset="assets/images/ski-280.jpg 1x, assets/images/ski-560.jpg 2x"
+                     alt="Gautier Dagan" 
+                     class="profile-photo"
+                     width="140" 
+                     height="140"
+                     decoding="async"
+                     fetchpriority="high">
+            </picture>
             <h1>Gautier Dagan</h1>
             <p class="tagline">PhD in NLP · University of Edinburgh</p>
             
