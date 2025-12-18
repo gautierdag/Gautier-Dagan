@@ -54,9 +54,8 @@ body {
 /* Header */
 header {
     text-align: center;
-    margin-bottom: var(--spacing);
-    padding-bottom: var(--spacing);
-    border-bottom: 1px solid var(--color-border);
+    margin-bottom: 0;
+    border-bottom: 0px solid var(--color-border);
 }
 
 .profile-photo {
@@ -105,6 +104,35 @@ h1 {
 .social-links svg {
     width: 22px;
     height: 22px;
+}
+
+/* News Band Animation */
+.news-band {
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: var(--color-muted);
+    padding: 0;
+    margin-bottom: var(--spacing);
+    border-bottom: 1px solid var(--color-border);
+    cursor: pointer;
+}
+
+.news-band span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: ticker 15s linear infinite;
+}
+
+.news-band:hover span {
+    animation-play-state: paused;
+}
+
+@keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-200%); }
 }
 
 /* Sections */

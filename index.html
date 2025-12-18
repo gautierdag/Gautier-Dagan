@@ -53,7 +53,7 @@
                      fetchpriority="high">
             </picture>
             <h1>Gautier Dagan</h1>
-            <p class="tagline">PhD in NLP · University of Edinburgh</p>
+            <p class="tagline">Building Agents</p>
             
             <nav class="social-links">
                 <a href="mailto:gautier.dagan@gmail.com" title="Email">📧</a>
@@ -73,16 +73,16 @@
             </nav>
         </header>
 
+        <div class="news-band" id="news-band"><span id="ticker"></span></div>
+
         <main>
         <!-- About -->
         <section id="about">
-            <h2>About</h2>
             <p>
-                I joined Cohere in the next-generation agents team as a Member of Technical Staff in January 2026, 
-                focusing on building smarter agents powered by LLMs for complex tasks.
+                I'm a Member of Technical Staff at <a href="https://cohere.com" target="_blank" rel="noopener">Cohere</a> where I try to build smarter LLMs agents.
             </p>
             <p>
-                I submitted my PhD (2025) in NLP at the University of Edinburgh through the 
+                Before that I completed my PhD (2025) in NLP at the University of Edinburgh through the 
                 <a href="https://web.inf.ed.ac.uk/cdt/natural-language-processing" target="_blank" rel="noopener">UKRI CDT programme</a>, 
                 supervised by Alex Lascarides and Frank Keller.
             </p>
@@ -92,10 +92,6 @@
                 I focus on combining neuro-symbolic methods in agents to generate coherent plans and 
                 generalize to new capabilities. I'm also interested in code generation and applying 
                 NLP to software engineering and automation.
-            </p>
-            <p>
-                From August to November 2023, I completed a research internship at <strong>Meta</strong> in Paris 
-                within the CodeGen team, working on improving tokenizers for code generation (published at ICML 2024).
             </p>
         </section>
 
@@ -131,6 +127,7 @@
                     <strong>Member of Technical Staff</strong> · Cohere
                     <span class="date">Jan 2026 – Present</span>
                     <br><span class="muted">Building next-generation agents</span>
+                </li>
                 <li>
                     <strong>Research Intern</strong> · Meta (CodeGen Team)
                     <span class="date">Aug – Nov 2023</span>
@@ -219,24 +216,6 @@
     const SEMANTIC_SCHOLAR_ID = '67175437';
     // GitHub username
     const GITHUB_USERNAME = 'gautierdag';
-    
-    // Fallback publications in case API fails
-    const FALLBACK_PUBLICATIONS = [
-        {
-            title: "Co-evolution of language and agents in referential games",
-            authors: "G. Dagan, D. Hupkes, E. Bruni",
-            venue: "EACL 2021",
-            year: 2021,
-            url: "https://aclanthology.org/2021.eacl-main.260/"
-        },
-        {
-            title: "Adding Object Detection Skills to Visual Dialogue Agents",
-            authors: "G. Bani, D. Papaioannou, R. Fernández, G. Dagan",
-            venue: "ECCV 2018 Workshop (SiVL)",
-            year: 2018,
-            url: "https://arxiv.org/abs/1808.07547"
-        }
-    ];
 
     function renderPublications(publications) {
         const container = document.getElementById('publications-list');
@@ -323,7 +302,8 @@
             
         } catch (error) {
             console.error('Failed to fetch publications:', error);
-            renderPublications(FALLBACK_PUBLICATIONS);
+            document.getElementById('publications-list').innerHTML = 
+                '<p class="muted">Failed to load publications. <a href="https://scholar.google.com/citations?user=fyqu2nIAAAAJ" target="_blank">View on Google Scholar →</a></p>';
         }
     }
 
@@ -388,6 +368,49 @@
     // Fetch on page load
     fetchPublications();
     fetchProjects();
+
+    // Simple quote ticker - author shows on hover, synced with animation
+    (function() {
+        const quotes = [
+            { text: 'A COMPUTER CAN NEVER BE HELD ACCOUNTABLE', author: 'IBM, 1979' },
+            { text: 'MACHINES TAKE ME BY SURPRISE WITH GREAT FREQUENCY', author: 'Alan Turing, 1950' },
+            { text: 'THE BEST WAY TO PREDICT THE FUTURE IS TO INVENT IT', author: 'Alan Kay, 1971' },
+            { text: 'BEWARE OF BUGS IN THE ABOVE CODE; I HAVE ONLY PROVED IT CORRECT, NOT TRIED IT', author: 'Donald Knuth' },
+            { text: 'I VISUALIZE A TIME WHEN WE WILL BE TO ROBOTS WHAT DOGS ARE TO HUMANS', author: 'Claude Shannon, 1987' },
+            { text: 'NEVER TRUST A COMPUTER YOU CANT THROW OUT A WINDOW', author: 'Steve Wozniak' }
+        ];
+        
+        const ticker = document.getElementById('ticker');
+        const band = document.getElementById('news-band');
+        let idx = 0;
+        let showAuthor = false;
+        
+        function render() {
+            const q = quotes[idx];
+            ticker.textContent = showAuthor ? `${q.text} — ${q.author}` : q.text;
+        }
+        
+        render();
+        
+        // Show author instantly on hover
+        band.addEventListener('mouseenter', () => { showAuthor = true; render(); });
+        band.addEventListener('mouseleave', () => { showAuthor = false; render(); });
+        
+        // Only advance quote when animation actually completes (respects pause on hover)
+        ticker.addEventListener('animationiteration', () => {
+            idx = (idx + 1) % quotes.length;
+            render();
+        });
+        
+        // Mobile: tap to show author briefly
+        band.addEventListener('click', (e) => {
+            if (e.pointerType === 'touch' || !showAuthor) {
+                showAuthor = true;
+                render();
+                setTimeout(() => { showAuthor = false; render(); }, 2000);
+            }
+        });
+    })();
     </script>
 </body>
 </html>
