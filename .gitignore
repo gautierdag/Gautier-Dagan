@@ -1,6 +1,12 @@
-_site
-.sass-cache
-.jekyll-metadata
-vendor/
-.bundle
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
 .DS_Store
+
+# IDE
+.vscode/
+.idea/
