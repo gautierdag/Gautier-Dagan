@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <style><![CDATA[
+      .bg { fill: #fafaf8; }
+      .ink { fill: none; stroke: #2c2c2a; stroke-width: 3.2; stroke-linecap: round; stroke-linejoin: round; }
+      .ink-thin { fill: none; stroke: #2c2c2a; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+      .disease-stroke { fill: none; stroke: #c2592b; stroke-width: 3.2; stroke-linecap: round; stroke-linejoin: round; }
+      .disease-mark { fill: #c2592b; }
+
+      @media (prefers-color-scheme: dark) {
+        .bg { fill: #1c1c1c; }
+        .ink { stroke: #d8d8d4; }
+        .ink-thin { stroke: #b0b0ac; }
+        .disease-stroke { stroke: #e07248; }
+        .disease-mark { fill: #e07248; }
+      }
+    ]]></style>
+  </defs>
+
+  <!-- Color 1: Background -->
+  <rect width="800" height="450" class="bg"/>
+
+  <!-- Ground line -->
+  <path d="M 60 395 C 240 390 540 390 740 395" class="ink-thin"/>
+
+  <!-- TREE 1 (Left: Lean healthy bare tree) -->
+  <path d="M 140 395 Q 145 300 135 220 Q 120 160 105 110" class="ink"/>
+  <path d="M 152 395 Q 155 315 145 250" class="ink"/>
+  <!-- Bare branches -->
+  <path d="M 135 220 Q 170 170 195 130" class="ink-thin"/>
+  <path d="M 170 170 Q 175 125 160 95" class="ink-thin"/>
+  <path d="M 140 260 Q 110 215 90 185" class="ink-thin"/>
+  <path d="M 120 160 Q 140 140 145 115" class="ink-thin"/>
+
+  <!-- TREE 2 (Mid-Left: Upright healthy bare tree) -->
+  <path d="M 270 395 Q 265 295 285 210 Q 275 145 255 85" class="ink"/>
+  <path d="M 288 395 Q 285 305 300 230" class="ink"/>
+  <!-- Bare branches -->
+  <path d="M 285 210 Q 325 160 355 120" class="ink-thin"/>
+  <path d="M 320 165 Q 330 120 315 80" class="ink-thin"/>
+  <path d="M 275 250 Q 240 210 220 185" class="ink-thin"/>
+  <path d="M 270 170 Q 295 140 300 110" class="ink-thin"/>
+  <path d="M 262 110 Q 240 90 235 65" class="ink-thin"/>
+
+  <!-- TREE 3 (Center: Diseased tree - warped trunk with disease on bark) -->
+  <path d="M 440 395 Q 425 330 435 270 Q 420 215 440 150 Q 430 110 415 70" class="ink"/>
+  <path d="M 465 395 Q 460 330 455 260 Q 475 200 480 140" class="ink"/>
+
+  <!-- Bare branches splitting off -->
+  <path d="M 440 150 Q 410 120 390 100" class="ink-thin"/>
+  <path d="M 455 260 Q 485 220 515 200" class="ink-thin"/>
+  <path d="M 480 140 Q 510 110 525 80" class="ink-thin"/>
+  <path d="M 430 220 Q 395 190 380 180" class="ink-thin"/>
+
+  <!-- Color 3: Disease markings on bark (rot lines and lesions) -->
+  <path d="M 432 350 Q 448 335 438 300" class="disease-stroke"/>
+  <path d="M 458 360 Q 445 320 452 280" class="disease-stroke"/>
+  <path d="M 442 270 Q 455 250 445 220" class="disease-stroke"/>
+  <path d="M 428 200 Q 436 175 430 155" class="disease-stroke"/>
+  
+  <ellipse cx="445" cy="325" rx="3.5" ry="7" class="disease-mark"/>
+  <ellipse cx="452" cy="255" rx="3" ry="5.5" class="disease-mark"/>
+  <circle cx="438" cy="180" r="3" class="disease-mark"/>
+
+  <!-- TREE 4 (Right: Heavily diseased bare tree with gnarled, twisting branches) -->
+  <path d="M 610 395 Q 600 310 620 240 Q 595 180 575 125" class="ink"/>
+  <path d="M 635 395 Q 640 315 635 250 Q 665 190 690 130" class="ink"/>
+
+  <!-- Bare branches -->
+  <path d="M 620 240 Q 630 170 645 105" class="ink-thin"/>
+  <path d="M 630 170 Q 605 130 595 90" class="ink-thin"/>
+  <path d="M 610 270 Q 570 235 550 220" class="ink-thin"/>
+  <path d="M 635 250 Q 670 230 705 210" class="ink-thin"/>
+  <path d="M 665 190 Q 705 170 725 140" class="ink-thin"/>
+
+  <!-- Color 3: Disease on bark -->
+  <path d="M 610 355 Q 625 330 615 295" class="disease-stroke"/>
+  <path d="M 630 330 Q 622 285 630 250" class="disease-stroke"/>
+  <path d="M 615 240 Q 605 210 612 180" class="disease-stroke"/>
+  <path d="M 638 215 Q 652 195 645 170" class="disease-stroke"/>
+
+  <ellipse cx="620" cy="315" rx="3.5" ry="7" class="disease-mark"/>
+  <ellipse cx="625" cy="270" rx="3" ry="6" class="disease-mark"/>
+  <circle cx="612" cy="205" r="3" class="disease-mark"/>
+  <circle cx="632" cy="155" r="2.5" class="disease-mark"/>
+</svg>

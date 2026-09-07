@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <style><![CDATA[
+      .bg { fill: #fbfbf9; }
+      .line { fill: none; stroke: #2b2b2b; stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; }
+      .line-thin { fill: none; stroke: #2b2b2b; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+      .fill-glass { fill: #e8ecf1; opacity: 0.45; }
+      .fill-cork { fill: #d5bdaf; opacity: 0.75; }
+      
+      /* The whole boat is BLUE: "whisper a prompt to change flag and the whole boat changes colour" */
+      .boat-line { fill: none; stroke: #1d5fa7; stroke-width: 3.2; stroke-linecap: round; stroke-linejoin: round; }
+      .boat-line-thin { fill: none; stroke: #2b75c8; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+      .boat-hull { fill: #205c9e; stroke: #16467a; stroke-width: 3; stroke-linejoin: round; }
+      .boat-sail { fill: #6ba4e8; stroke: #1d5fa7; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+      .boat-flag { fill: #1d5fa7; stroke: #16467a; stroke-width: 2; }
+
+      @media (prefers-color-scheme: dark) {
+        .bg { fill: #1e1e1e; }
+        .line { stroke: #dcdcd8; }
+        .line-thin { stroke: #b0b0a8; }
+        .fill-glass { fill: #1e293b; opacity: 0.55; }
+        .fill-cork { fill: #5c4738; opacity: 0.75; }
+        
+        .boat-line { stroke: #60a5fa; stroke-width: 3.2; }
+        .boat-line-thin { stroke: #93c5fd; stroke-width: 2.2; }
+        .boat-hull { fill: #1e3a8a; stroke: #60a5fa; }
+        .boat-sail { fill: #2563eb; stroke: #93c5fd; }
+        .boat-flag { fill: #93c5fd; stroke: #bfdbfe; }
+      }
+    ]]></style>
+  </defs>
+
+  <!-- Canvas background -->
+  <rect width="800" height="450" class="bg"/>
+
+  <!-- Table surface stroke -->
+  <path d="M 60 380 L 740 380" class="line-thin"/>
+  <!-- Table shadow wash -->
+  <ellipse cx="460" cy="382" rx="220" ry="12" class="fill-glass"/>
+
+  <!-- Inside bottle wash (resting bottom glass tint) -->
+  <path d="M 270 295 Q 460 280 650 295 Q 640 325 460 330 Q 280 325 270 295 Z" class="fill-glass"/>
+
+  <!-- Glass Bottle Outline (lying horizontally) -->
+  <!-- Cork in the narrow neck on the left -->
+  <polygon points="120,205 155,208 155,242 120,245" class="fill-cork"/>
+  <polygon points="120,205 155,208 155,242 120,245" class="line"/>
+
+  <!-- Bottle Lip / Rim -->
+  <ellipse cx="155" cy="225" rx="6" ry="18" class="line" fill="none"/>
+
+  <!-- Bottle Neck (very narrow opening) -->
+  <path d="M 155 212 L 235 212" class="line"/>
+  <path d="M 155 238 L 235 238" class="line"/>
+
+  <!-- Bottle Shoulder & Main Body -->
+  <path d="M 235 212 C 275 212 285 130 350 130 L 630 130 C 695 130 710 165 710 225 C 710 285 695 320 630 320 L 350 320 C 285 320 275 238 235 238" class="line"/>
+
+  <!-- Glass reflection strokes (minimal highlights) -->
+  <path d="M 330 155 Q 480 150 610 155" class="line-thin" stroke-dasharray="45, 20, 100, 30"/>
+  <path d="M 680 170 Q 695 215 685 275" class="line-thin"/>
+
+  <!-- THE ENTIRE SHIP IS BLUE -->
+  <!-- Blue ripples under the ship -->
+  <path d="M 310 295 Q 345 288 385 295 Q 430 302 475 295 Q 520 288 560 295 Q 600 300 630 295" class="boat-line-thin"/>
+
+  <!-- Blue Hull -->
+  <path d="M 340 250 C 370 290 580 290 615 250 Q 625 240 600 240 L 325 240 Z" class="boat-hull"/>
+
+  <!-- Blue Bowsprit pointing left towards the narrow neck -->
+  <path d="M 340 240 L 300 225" class="boat-line-thin"/>
+
+  <!-- 3 Blue Masts -->
+  <!-- Fore mast (left) -->
+  <path d="M 390 240 L 390 160" class="boat-line"/>
+  <!-- Main mast (center - tallest) -->
+  <path d="M 470 240 L 470 145" class="boat-line"/>
+  <!-- Mizzen mast (right) -->
+  <path d="M 545 240 L 545 165" class="boat-line"/>
+
+  <!-- Blue Sails (loose curved strokes) -->
+  <!-- Fore sails -->
+  <path d="M 365 220 Q 388 226 410 220 L 405 198 Q 388 203 370 198 Z" class="boat-sail"/>
+  <path d="M 370 192 Q 388 197 408 192 L 403 172 Q 388 177 375 172 Z" class="boat-sail"/>
+
+  <!-- Main sails -->
+  <path d="M 440 225 Q 470 232 500 225 L 495 198 Q 470 205 445 198 Z" class="boat-sail"/>
+  <path d="M 445 192 Q 470 198 495 192 L 490 168 Q 470 174 450 168 Z" class="boat-sail"/>
+  <path d="M 452 163 Q 470 168 488 163 L 484 148 Q 470 152 456 148 Z" class="boat-sail"/>
+
+  <!-- Mizzen sails -->
+  <path d="M 525 222 Q 545 228 565 222 L 562 200 Q 545 205 528 200 Z" class="boat-sail"/>
+  <path d="M 528 194 Q 545 199 562 194 L 558 175 Q 545 179 532 175 Z" class="boat-sail"/>
+
+  <!-- Blue Rigging line strokes -->
+  <path d="M 300 225 L 390 160 L 470 145 L 545 165 L 605 240" class="boat-line-thin"/>
+
+  <!-- Blue Flag on main mast -->
+  <polygon points="470,145 498,152 470,159" class="boat-flag"/>
+
+  <!-- Pair of craftsman tweezers / needle tool resting outside the bottle -->
+  <path d="M 80 180 L 195 218" class="line-thin"/>
+  <path d="M 80 174 L 195 216" class="line-thin"/>
+</svg>
